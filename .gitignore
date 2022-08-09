@@ -60,6 +60,7 @@ jspm_packages/
 
 # Editor-specific metadata folders
 .vs
+.vscode
 
 # Build artifacts
 lib

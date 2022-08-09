@@ -8,7 +8,6 @@ module.exports = {
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
-    "prettier/@typescript-eslint",
   ],
   plugins: ["tsdoc", "padding"],
   parser: "@typescript-eslint/parser",

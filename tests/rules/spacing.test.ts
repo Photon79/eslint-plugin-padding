@@ -1,5 +1,5 @@
 // this rule tests new lines which prettier tries to fix, breaking the tests
-import { AST_NODE_TYPES, ESLintUtils } from "@typescript-eslint/experimental-utils";
+import { AST_NODE_TYPES, ESLintUtils } from "@typescript-eslint/utils";
 import rule from "../../src/rules/spacing";
 
 // ------------------------------------------------------------------------------
@@ -30,7 +30,7 @@ ruleTester.run("padding-line-between-statements", rule, {
     //
     {
       code: `import foo from "bar";
-      
+
 /** Test */
 import bar from "foo";
 `,
@@ -44,7 +44,7 @@ import bar from "foo";
     },
     {
       code: `import foo from "bar";
-      
+
 /** Test */
 import bar from "foo";
 `,
@@ -71,7 +71,7 @@ import bar from "foo";
     },
     {
       code: `import foo from "bar";
-      
+
 // Test
 import bar from "foo";
 `,

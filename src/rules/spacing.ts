@@ -5,7 +5,7 @@ import {
   ASTUtils,
   ESLintUtils,
   AST_TOKEN_TYPES,
-} from "@typescript-eslint/experimental-utils";
+} from "@typescript-eslint/utils";
 
 // ------------------------------------------------------------------------------
 // Local Types
@@ -512,7 +512,7 @@ export default ESLintUtils.RuleCreator((name) => `https://github.com/mu-io/${nam
     type: "layout",
     docs: {
       description: "requires or disallows spacing between statements",
-      category: "Stylistic Issues",
+      // category: "Stylistic Issues",
       recommended: false,
     },
     fixable: "whitespace",
