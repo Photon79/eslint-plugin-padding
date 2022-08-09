@@ -1542,8 +1542,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello';\n// next-line comment\n// second-line comment\n\nconsole.log(greet);",
+      code: "var greet = 'hello';\n// next-line comment\n// second-line comment\n\nconsole.log(greet);",
       options: [
         { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1556,8 +1555,7 @@ import bar from "foo";
 
     // should allow comments on the next line followed by no blank in "never" mode
     {
-      code:
-        "var greet = 'hello';\n// next-line comment\n// second-line comment\nconsole.log(greet);",
+      code: "var greet = 'hello';\n// next-line comment\n// second-line comment\nconsole.log(greet);",
       options: [
         { blankLine: "never", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1568,8 +1566,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello';\n// next-line comment\n/* block comment\nblock comment */\nconsole.log(greet);",
+      code: "var greet = 'hello';\n// next-line comment\n/* block comment\nblock comment */\nconsole.log(greet);",
       options: [
         { blankLine: "never", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1617,8 +1614,7 @@ import bar from "foo";
 
     // should allow a comment directly between `var` statements
     {
-      code:
-        "var greet = 'hello';\n// inline comment\nvar name = 'world';\n\nconsole.log(greet, name);",
+      code: "var greet = 'hello';\n// inline comment\nvar name = 'world';\n\nconsole.log(greet, name);",
       options: [
         { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1629,8 +1625,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello';\n/* block comment\nblock comment */\nvar name = 'world';\n\nconsole.log(greet, name);",
+      code: "var greet = 'hello';\n/* block comment\nblock comment */\nvar name = 'world';\n\nconsole.log(greet, name);",
       options: [
         { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1641,8 +1636,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello';\n// inline comment\nvar name = 'world';\nconsole.log(greet, name);",
+      code: "var greet = 'hello';\n// inline comment\nvar name = 'world';\nconsole.log(greet, name);",
       options: [
         { blankLine: "never", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1653,8 +1647,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello';\n/* block comment\nblock comment */\nvar name = 'world';\nconsole.log(greet, name);",
+      code: "var greet = 'hello';\n/* block comment\nblock comment */\nvar name = 'world';\nconsole.log(greet, name);",
       options: [
         { blankLine: "never", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1724,8 +1717,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello', // inline comment\nname = 'world'; // inline comment\n\nconsole.log(greet, name);",
+      code: "var greet = 'hello', // inline comment\nname = 'world'; // inline comment\n\nconsole.log(greet, name);",
       options: [
         { blankLine: "always", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1736,8 +1728,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello', // inline comment\nname = 'world'; // inline comment\nconsole.log(greet, name);",
+      code: "var greet = 'hello', // inline comment\nname = 'world'; // inline comment\nconsole.log(greet, name);",
       options: [
         { blankLine: "never", prev: ["const", "let", "var"], next: "*" },
         {
@@ -1759,8 +1750,7 @@ import bar from "foo";
       ],
     },
     {
-      code:
-        "var greet = 'hello',\nname = 'world';\n/* block comment\nblock comment */\nconsole.log(greet);",
+      code: "var greet = 'hello',\nname = 'world';\n/* block comment\nblock comment */\nconsole.log(greet);",
       options: [
         { blankLine: "never", prev: ["const", "let", "var"], next: "*" },
         {
@@ -2347,13 +2337,11 @@ var a = 1
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
-      code:
-        "function a() {\nif (b) {\nreturn b;\n} else if (c) {\nreturn c;\n} else {\nreturn d;\n}\n}",
+      code: "function a() {\nif (b) {\nreturn b;\n} else if (c) {\nreturn c;\n} else {\nreturn d;\n}\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
-      code:
-        "function a() {\nif (b) {\nreturn b;\n} else if (c) {\nreturn c;\n} else {\nreturn d;\n}\n\nreturn a;\n}",
+      code: "function a() {\nif (b) {\nreturn b;\n} else if (c) {\nreturn c;\n} else {\nreturn d;\n}\n\nreturn a;\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
@@ -2365,8 +2353,7 @@ var a = 1
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
-      code:
-        "function a() {\nif (b) return b;\nelse if (c) return c;\nelse {\ne();\n\nreturn d;\n}\n}",
+      code: "function a() {\nif (b) return b;\nelse if (c) return c;\nelse {\ne();\n\nreturn d;\n}\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
@@ -2434,8 +2421,7 @@ var a = 1
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
-      code:
-        "function a() {\nfor (var b; b < c; b++) {\nif (d) {\nbreak; //comment\n}\n\nreturn;\n}\n}",
+      code: "function a() {\nfor (var b; b < c; b++) {\nif (d) {\nbreak; //comment\n}\n\nreturn;\n}\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
@@ -2507,8 +2493,7 @@ var a = 1
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
-      code:
-        "function a() {\n/*comment\ncomment*/\n//comment\nif (b) {\nc();\n\nreturn b;\n} else {\n//comment\nreturn d;\n}\n\n/*multi-line\ncomment*/\nreturn e;\n}",
+      code: "function a() {\n/*comment\ncomment*/\n//comment\nif (b) {\nc();\n\nreturn b;\n} else {\n//comment\nreturn d;\n}\n\n/*multi-line\ncomment*/\nreturn e;\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
     },
     {
@@ -4408,8 +4393,7 @@ import bar from "foo";
       errors: [{ messageId: "unexpectedBlankLine" }],
     },
     {
-      code:
-        "var greet = 'hello', // inline comment\nname = 'world'; // inline comment\n\nconsole.log(greet, name);",
+      code: "var greet = 'hello', // inline comment\nname = 'world'; // inline comment\n\nconsole.log(greet, name);",
       output:
         "var greet = 'hello', // inline comment\nname = 'world'; // inline comment\nconsole.log(greet, name);",
       options: [
@@ -4490,8 +4474,7 @@ import bar from "foo";
       errors: [{ messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        "var greet = 'hello',\nname = 'world';\n/* block comment\nblock comment */\nconsole.log(greet);",
+      code: "var greet = 'hello',\nname = 'world';\n/* block comment\nblock comment */\nconsole.log(greet);",
       output:
         "var greet = 'hello',\nname = 'world';\n\n/* block comment\nblock comment */\nconsole.log(greet);",
       options: [
@@ -4505,8 +4488,7 @@ import bar from "foo";
       errors: [{ messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        "var greet = 'hello';\n// next-line comment\n// second-line comment\nconsole.log(greet);",
+      code: "var greet = 'hello';\n// next-line comment\n// second-line comment\nconsole.log(greet);",
       output:
         "var greet = 'hello';\n\n// next-line comment\n// second-line comment\nconsole.log(greet);",
       options: [
@@ -4520,8 +4502,7 @@ import bar from "foo";
       errors: [{ messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        "var greet = 'hello';\n// next-line comment\n/* block comment\nblock comment */\nconsole.log(greet);",
+      code: "var greet = 'hello';\n// next-line comment\n/* block comment\nblock comment */\nconsole.log(greet);",
       output:
         "var greet = 'hello';\n\n// next-line comment\n/* block comment\nblock comment */\nconsole.log(greet);",
       options: [
@@ -4594,8 +4575,7 @@ var a = 1
       errors: [{ messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        "function a() {\nif (b) return b;\nelse if (c) return c;\nelse {\ne();\nreturn d;\n}\n}",
+      code: "function a() {\nif (b) return b;\nelse if (c) return c;\nelse {\ne();\nreturn d;\n}\n}",
       output:
         "function a() {\nif (b) return b;\nelse if (c) return c;\nelse {\ne();\n\nreturn d;\n}\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
@@ -4645,8 +4625,7 @@ var a = 1
       errors: [{ messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        "function a() {\n/*comment\ncomment*/\nif (b) {\nc();\nreturn b;\n} else {\n//comment\n\nreturn d;\n}\n/*multi-line\ncomment*/\nreturn e;\n}",
+      code: "function a() {\n/*comment\ncomment*/\nif (b) {\nc();\nreturn b;\n} else {\n//comment\n\nreturn d;\n}\n/*multi-line\ncomment*/\nreturn e;\n}",
       output:
         "function a() {\n/*comment\ncomment*/\nif (b) {\nc();\n\nreturn b;\n} else {\n//comment\n\nreturn d;\n}\n\n/*multi-line\ncomment*/\nreturn e;\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
@@ -4709,8 +4688,7 @@ var a = 1
       errors: [{ messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        "function a() {\nfor (var b; b < c; b++) {\nif (d) {\nbreak; //comment\n}\nreturn;\n}\n}",
+      code: "function a() {\nfor (var b; b < c; b++) {\nif (d) {\nbreak; //comment\n}\nreturn;\n}\n}",
       output:
         "function a() {\nfor (var b; b < c; b++) {\nif (d) {\nbreak; //comment\n}\n\nreturn;\n}\n}",
       options: [{ blankLine: "always", prev: "*", next: "return" }],
@@ -4873,8 +4851,7 @@ var a = 1
       errors: [{ messageId: "unexpectedBlankLine" }],
     },
     {
-      code:
-        'function x() { var y = true;\n\nswitch ("Oranges") { case "Oranges": y = !y;\n\nbreak;\n\ncase "Apples": y = !y;\n\nbreak; default: y = !y; } }',
+      code: 'function x() { var y = true;\n\nswitch ("Oranges") { case "Oranges": y = !y;\n\nbreak;\n\ncase "Apples": y = !y;\n\nbreak; default: y = !y; } }',
       output:
         'function x() { var y = true;\nswitch ("Oranges") { case "Oranges": y = !y;\nbreak;\ncase "Apples": y = !y;\nbreak; default: y = !y; } }',
       options: [
@@ -4904,8 +4881,7 @@ var a = 1
       errors: [{ messageId: "unexpectedBlankLine" }, { messageId: "unexpectedBlankLine" }],
     },
     {
-      code:
-        "function x(a) { var b = 0;\n\nif (!a) { return false; };\n\nfor (var i = 0; i < b; i++) { if (!a[i]) return false; }\n\nreturn true; }",
+      code: "function x(a) { var b = 0;\n\nif (!a) { return false; };\n\nfor (var i = 0; i < b; i++) { if (!a[i]) return false; }\n\nreturn true; }",
       output:
         "function x(a) { var b = 0;\nif (!a) { return false; };\nfor (var i = 0; i < b; i++) { if (!a[i]) return false; }\nreturn true; }",
       options: [
@@ -5006,8 +4982,7 @@ var a = 1
       errors: [{ messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        'function x() { var y = true; switch ("Oranges") { case "Oranges": y = !y; break; case "Apples": y = !y; break; default: y = !y; } }',
+      code: 'function x() { var y = true; switch ("Oranges") { case "Oranges": y = !y; break; case "Apples": y = !y; break; default: y = !y; } }',
       output:
         'function x() { var y = true;\n\n switch ("Oranges") { case "Oranges": y = !y;\n\n break;\n\n case "Apples": y = !y;\n\n break;\n\n default: y = !y; } }',
       options: [
@@ -5050,8 +5025,7 @@ var a = 1
       errors: [{ messageId: "expectedBlankLine" }, { messageId: "expectedBlankLine" }],
     },
     {
-      code:
-        "function x(a) { var b = 0; if (!a) { return false; }; for (var i = 0; i < b; i++) { if (!a[i]) return false; } return true; }",
+      code: "function x(a) { var b = 0; if (!a) { return false; }; for (var i = 0; i < b; i++) { if (!a[i]) return false; } return true; }",
       output:
         "function x(a) { var b = 0;\n\n if (!a) { return false; };\n\n for (var i = 0; i < b; i++) { if (!a[i]) return false; }\n\n return true; }",
       options: [
