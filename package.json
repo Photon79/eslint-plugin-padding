@@ -47,7 +47,7 @@
 		"lint:es": "eslint --ext .js,.ts ./src",
 		"lint:ts": "tsc -p tsconfig.json --noEmit",
 		"test": "jest",
-    "prepare": "yarn build",
+    "postinstall": "yarn build",
 		"prerelease": "yarn build",
 		"release": "changeset publish"
 	},
