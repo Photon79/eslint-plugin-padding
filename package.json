@@ -1,10 +1,10 @@
 {
-	"name": "eslint-plugin-padding",
+	"name": "eslint-plugin-padding-ex",
 	"version": "1.0.0",
 	"description": "An ESLint plugin regarding any and all spacing between statements",
 	"license": "GPL-3.0-or-later",
-	"repository": "https://github.com/mu-io/eslint-plugin-padding",
-	"bugs": "https://github.com/mu-io/eslint-plugin-padding/issues",
+	"repository": "https://github.com/Photon79/eslint-plugin-padding-ex",
+	"bugs": "https://github.com/Photon79/eslint-plugin-padding-ex/issues",
 	"author": "jun-sheaf",
 	"keywords": [
 		"eslint",
