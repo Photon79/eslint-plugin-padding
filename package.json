@@ -1,6 +1,6 @@
 {
 	"name": "eslint-plugin-padding-ex",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "An ESLint plugin regarding any and all spacing between statements",
 	"license": "GPL-3.0-or-later",
 	"repository": "https://github.com/Photon79/eslint-plugin-padding-ex",
@@ -47,7 +47,6 @@
 		"lint:es": "eslint --ext .js,.ts ./src",
 		"lint:ts": "tsc -p tsconfig.json --noEmit",
 		"test": "jest",
-    "postinstall": "yarn build",
 		"prerelease": "yarn build",
 		"release": "changeset publish"
 	},
@@ -64,7 +63,7 @@
 		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-padding": "1.0.0",
+		"eslint-plugin-padding-ex": "1.0.1",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-tsdoc": "^0.2.16",
 		"husky": "^4.2.5",
